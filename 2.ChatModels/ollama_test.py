@@ -1,6 +1,8 @@
 import os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+import warnings 
+
 
 load_dotenv()
 
@@ -10,6 +12,6 @@ llm = ChatOpenAI(
     base_url="https://ollama.com/v1",
 )
 
-response = llm.invoke("What is the capital of Pakistan?")
+response = llm.invoke("What is the capital of Pakisan?")
 
 print(response.content)
